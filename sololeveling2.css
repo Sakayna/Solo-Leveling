@@ -1,0 +1,983 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-style: normal;
+	font-weight: 600;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+	text-align: center;
+	background-color: #171717;
+	
+	
+}
+
+.wrapper {
+	width: 1170px;
+	margin: 0 auto;
+	
+	
+}
+
+/* this is for the size of the nav bar */
+
+.box-area header {
+	height: 60px;
+	background: black;
+	width: 100%;
+	z-index: 12;
+	position: fixed;
+	border-bottom: 1px solid black;
+}
+
+
+
+.logo {
+	width: 10%;
+	float: left;
+	line-height: 60px;
+	
+}
+
+/* Reaperscans text */
+
+.logo a {
+	text-decoration: none;
+	font-size: 11px;
+	font-family:  'Poppins', sans-serif;
+	font-weight: bold;
+	color: #fff;
+	letter-spacing: 2px;
+	
+}
+
+.logo img {
+	float: left;
+	width: 70%;
+	height: 70%;
+	margin-left: -55%;
+	margin-top: -7%;
+
+}
+
+
+
+/* Nav bar (Homepage, Latest, All series, and etc.) */
+
+nav {
+	float: center;
+	line-height: 60px;
+	margin-left: 13%;
+	
+}
+
+nav a {
+	text-decoration: none;
+	font-family:  'Poppins', sans-serif;
+	letter-spacing: 1px;
+	font-size: 14px;
+	margin: 0px 10px;
+	color: #fff;
+	
+}
+
+
+/* for the search box */
+
+.search-box {
+	float: right;
+	display: flex;
+	margin-bottom: -40px;
+	width: 15%;
+}
+
+/* search icon png */
+
+.search-box img{
+	height: 20px;
+	width: 25px;
+	cursor: pointer;
+}
+
+/* search bar adjustment size (white box) */
+
+.search-box input{
+	width: 85%;
+	height: 22%;
+	margin-top: 18px;
+	margin-left: -1%;
+	margin-right: -20%;
+	font-size: 15px;
+	border: 0;
+	outline: none;
+}
+
+
+/* for size adjustment for video banner */
+
+.banner-area {
+	width: 100%;
+	height: 250px;
+}
+
+	
+
+
+/* Main text located at the center */
+
+.content-title h1{
+	font-size: 80px;
+	font-weight: bolder;
+	color: #fFf;
+	font-weight: 1000;
+	transition: 0.5s;
+	letter-spacing: 10px;
+}	
+
+.content-title h1:hover{
+	-webkit-text-stroke: 2px #fff;
+	color: transparent;
+}
+
+/* Style for info and summary */
+
+.content-title a {
+	text-decoration : none;
+	display: inline-block;
+	color: #fff;
+	font-size: 15px;
+	border: 2px solid #FFF;
+	padding: 5px 40px;
+	border-radius : 30px;
+	margin-left: 10px;
+	margin-top: 20px;
+}
+
+
+/* for the video */
+
+.back-video{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+	.back-video{
+		
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media (max-aspect-ratio: 16/9) {
+	.back-video{
+		
+		width: auto;
+		height: 100%;
+	}
+}
+
+
+
+
+/* adjustment for the size of the middle (which is the "top in content area") decrease*/
+
+.content-area {
+	width: 100%;
+	position: relative;
+	top: 195px;
+	background: linear-gradient(rgba(0,0,0,0.90),rgba(0,0,0,0.90)), url("banner7.png");
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	box-shadow: 0 0 20px 10px;
+	height: 885px; /*adjusting the black area located at the mid */
+	
+	
+}
+
+
+/* latest releases text */
+
+.content-area h2 {
+	float: left;
+	margin-left: 18px;
+	margin-bottom: 15px;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: none;
+	
+}
+
+.content-area img { 
+	float: right;
+	width: 20px;
+	height: 18px;
+	margin-right: 40px;
+	margin-top: 82px;
+	
+
+}
+
+
+
+
+/* Box content */
+
+
+	.Table { 
+		width:86%; 
+		height: 40%;
+		margin-left: auto;
+		margin-right: auto;
+		border-spacing: 10px;
+		
+	}
+	
+	.Table tr, td {
+		border: #282828 1px solid; 
+		border-radius: 10px 10px 10px 10px;
+		margin: 1px 1px 1px 1px;
+		font-size: 15px;
+		font-family: 'Poppins', sans-serif;
+		text-align: center;
+	}
+	
+	.Table h1 {
+		color: white;
+		font-size: 15px;
+		font-weight: lighter;
+		font-family: 'Poppins', sans-serif;
+		margin-right: 95px;
+		margin-top: 19px;
+		
+
+	}
+	
+	.Table p {
+		color: white;
+		font-size: 12px;
+		font-style: italic;
+		font-weight: lighter;
+		margin-top: 5px;
+		margin-left: 9px;
+		float: left;
+		font-family: 'Poppins', sans-serif;
+	}
+	
+	.Table img {
+		float: left;
+		width: 150px;
+		height: 85px;
+		margin-top: -1px;
+		border-radius: 10px 0px 0px 10px;
+		
+	}
+	
+
+.anotherone h3 {
+	float: center;
+	margin-top: 20px;
+	margin-left: 18px;
+	margin-bottom: 15px;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	font-size: 32px;
+	font-weight: bolder;
+	letter-spacing: 4px;
+	transform: scale(.5,1);
+	
+}
+
+	
+.anotherone h4 {
+	float: center;
+	margin-top: 20px;
+	margin-left: 18px;
+	margin-bottom: 15px;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	letter-spacing: none;
+	
+	
+}
+
+	
+.anotherone h5 {
+	float: center;
+	margin-top: 0px;
+	margin-left: 18px;
+	margin-bottom: 20px;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	font-size: 15px;
+	font-weight: lighter;
+	letter-spacing: none;
+	
+}
+
+
+
+
+/* another one */
+
+.anotherone {
+	width: 100%;
+	position: relative;
+	margin-top: 20%;
+	background: #171717;
+	display: block;
+	height: 1150px;
+	
+	
+}
+
+
+
+/* Icons */
+
+.icons{
+  display: inline-flex;
+  margin-left: 0%;
+	
+}
+.icons .icon{
+  margin: 0 20px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.icons .icon span{
+  display: block;
+  height: 60px;
+  width: 60px;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.icons .icon span i{
+  line-height: 60px;
+  font-size: 25px;
+}
+.icons .icon .tooltip{
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background: #fff;
+  color: #fff;
+  padding: 10px 18px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 25px;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.icons .icon:hover .tooltip{
+  top: -70px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.icon .tooltip:before{
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: #fff;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%) rotate(45deg);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.icons .icon:hover span{
+  color: #fff;
+}
+.icons .icon:hover span,
+.icons .icon:hover .tooltip{
+  text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+}
+.icons .facebook:hover span,
+.icons .facebook:hover .tooltip,
+.icons .facebook:hover .tooltip:before{
+  background: #3B5999;
+}
+.icons .twitter:hover span,
+.icons .twitter:hover .tooltip,
+.icons .twitter:hover .tooltip:before{
+  background: #FF8C00;
+}
+.icons .instagram:hover span,
+.icons .instagram:hover .tooltip,
+.icons .instagram:hover .tooltip:before{
+  background: #e1306c;
+}
+.icons .github:hover span,
+.icons .github:hover .tooltip,
+.icons .github:hover .tooltip:before{
+  background: #228B22;
+}
+.icons .youtube:hover span,
+.icons .youtube:hover .tooltip,
+.icons .youtube:hover .tooltip:before{
+  background: #DE463B;
+}
+.icons .discord:hover span,
+.icons .discord:hover .tooltip,
+.icons .discord:hover .tooltip:before{
+  background: #A569BD;
+}
+
+
+
+
+
+
+/* This is for the Comment policy */
+
+
+.policy {
+	height: 108px; 
+	width: 88%;
+	position: relative;
+	margin-top: 50px;
+	margin-left: 80px;
+	background-color: #323232;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+
+.policy h4{
+	float: left;
+}
+
+.policy h6 {
+	float: left;
+	color: white;
+	margin-top: 48px;
+	margin-left: -20%;
+	font-size: 13.5px;
+	font-weight: lighter;
+	
+	
+}
+
+
+.policy p {
+	float: left;
+	color: white;
+	margin-top: 69px;
+	margin-left: -27.5%;
+	font-size: 14px;
+	font-weight: lighter;
+}
+
+
+.policy img {
+	float: right;
+	width: 7%;
+	height: 60%;
+	margin-right: 40px;
+	margin-top: 20px;
+	color: gray;
+	
+	
+}
+
+.ftext h1 {
+	float: left;
+	margin-left: 80px;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: none;
+}
+
+
+/* this is for the featured comment */
+
+
+
+.featured {
+	height: 108px; 
+	width: 88%;
+	position: relative;
+	margin-top: 38px;
+	margin-left: 80px;
+	background-color: #323232;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+
+
+.featured h4{
+	float: left;
+
+	margin-left: -0.3px;
+	
+}
+
+.featured h6 {
+	color: white;
+	margin-top: 48px;
+	float: left;
+	margin-left: -14.5%;
+	font-size: 13.5px;
+	font-weight: lighter;
+	
+	
+}
+
+
+.featured p {
+	color: #AAAAAA;
+	margin-top: 67px;
+	float: left;
+	margin-left: -55.7%;
+	font-size: 14px;
+	font-weight: lighter;
+}
+
+
+.featured img {
+	float: left;
+	width: 5%;
+	height: 50%;
+	margin-top: 2%;
+	margin-left: 1.5%;
+	margin-right: 1%;
+	border-radius: 4px 4px 4px 4px;
+	
+}
+
+
+
+
+/* Comment section */
+
+
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+::selection{
+  color: #fff;
+  background: #1a81ff;
+}
+.container{
+  width: 500px;
+  height: 480px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 10px;
+  transition: height 0.2s ease;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+  margin-top: 50px;
+  margin-left: 31.5%;
+}
+.container.active{
+  height: 590px;
+}
+.container .comment{
+  width: 1000px;
+  display: flex;
+}
+.container .comment section{
+  width: 500px;
+  background: #fff;
+}
+.container img{
+  cursor: pointer;
+}
+.container .post{
+  transition: margin-left 0.18s ease;
+}
+.container.active .post{
+  margin-left: -500px;
+}
+.post header{
+  font-size: 22px;
+  font-weight: 600;
+  padding: 17px 0;
+  text-align: center;
+  border-bottom: 1px solid #bfbfbf;
+}
+.post form{
+  margin: 20px 25px;
+}
+.post form .content,
+.audience .list li .column{
+  display: flex;
+  align-items: center;
+}
+.post form .content img{
+  cursor: default;
+  max-width: 52px;
+}
+.post form .content .details{
+  margin: -3px 0 0 12px;
+}
+form .content .details p{
+  font-size: 17px;
+  font-weight: 500;
+}
+.content .details .privacy{
+  display: flex;
+  height: 25px;
+  cursor: pointer;
+  padding: 0 10px;
+  font-size: 11px;
+  margin-top: 3px;
+  border-radius: 5px;
+  align-items: center;
+  max-width: 98px;
+  background: #E4E6EB;
+  justify-content: space-between;
+}
+.details .privacy span{
+  font-size: 13px;
+  margin-top: 1px;
+  font-weight: 500;
+}
+.details .privacy i:last-child{
+  font-size: 13px;
+  margin-left: 1px;
+}
+form :where(textarea, button){
+  width: 100%;
+  outline: none;
+  border: none;
+}
+form textarea{
+  resize: none;
+  font-size: 18px;
+  margin-top: 30px;
+  min-height: 100px;
+}
+form textarea::placeholder{
+  color: #858585;
+}
+form textarea:focus::placeholder{
+  color: #b3b3b3;
+}
+form :where(.theme-emoji, .options){
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.theme-emoji img:last-child{
+  max-width: 24px;
+}
+form .options{
+  height: 57px;
+  margin: 15px 0;
+  padding: 0 15px;
+  border-radius: 7px;
+  border: 1px solid #B9B9B9;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+form .options :where(.list, li),
+.audience :where(.arrow-back, .icon, li .radio){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form .options p{
+  color: #595959;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: default;
+}
+form .options .list{
+  list-style: none;
+}
+.options .list li{
+  height: 42px;
+  width: 42px;
+  margin: 0 -1px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.options .list li:hover{
+  background: #f0f1f4;
+}
+.options .list li img{
+  width: 23px;
+}
+form button{
+  height: 53px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #BCC0C4;
+  cursor: no-drop;
+  border-radius: 7px;
+  background: #e2e5e9;
+  transition: all 0.3s ease;
+}
+form textarea:valid ~ button{
+  color: #fff;
+  cursor: pointer;
+  background: #4599FF;
+}
+form textarea:valid ~ button:hover{
+  background: #1a81ff;
+}
+.container .audience{
+  opacity: 0;
+  transition: opacity 0.12s ease;
+}
+.container.active .audience{
+  opacity: 1;
+}
+.audience header{
+  padding: 17px 0;
+  text-align: center;
+  position: relative;
+  border-bottom: 1px solid #bfbfbf;
+}
+.audience header .arrow-back{
+  position: absolute;
+  left: 25px;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #747474;
+  border-radius: 50%;
+  background: #E4E6EB;
+}
+.audience header p{
+  font-size: 22px;
+  font-weight: 600;
+}
+.audience .content{
+  margin: 20px 25px 0;
+}
+.audience .content p{
+  font-size: 17px;
+  font-weight: 500;
+}
+.audience .content span{
+  font-size: 14px;
+  color: #65676B;
+}
+.audience .list{
+  margin: 15px 16px 20px;
+  list-style: none;
+}
+.audience .list li{
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 5px;
+  padding: 12px 10px;
+  border-radius: 7px;
+  align-items: center;
+  justify-content: space-between;
+}
+.list li.active,
+.audience .list li.active:hover{
+  background: #E5F1FF;
+}
+.audience .list li:hover{
+  background: #f0f1f4;
+}
+.audience .list li .column .icon{
+  height: 50px;
+  width: 50px;
+  color: #333;
+  font-size: 23px;
+  border-radius: 50%;
+  background: #E4E6EB;
+}
+.audience .list li.active .column .icon{
+  background: #cce4ff;
+}
+.audience .list li .column .details{
+  margin-left: 15px;
+}
+.list li .column .details p{
+  font-weight: 500;
+}
+.list li .column .details span{
+  font-size: 14px;
+  color: #65676B;
+}
+.list li .radio{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: relative;
+  border: 1px solid #707070;
+}
+.list li.active .radio{
+  border: 2px solid #4599FF;
+}
+.list li .radio::before{
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: inherit;
+}
+.list li.active .radio::before{
+  background: #4599FF;
+}
+
+
+
+/* footer */
+
+.line {
+	height: 4px; 
+	width: 88%;
+	margin-top: 38px;
+	margin-left: 80px;
+	background-color: #323232;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+
+
+.line1 {
+	margin-left: 84px;
+	margin-top: 7px;
+}
+
+.line1 li {
+	float: left;
+	color: #AAAAAA;
+	display: inline;
+	margin-right: 3%;
+	font-size: 14px;
+	
+}
+
+
+.line1 img {
+	float: right;
+	width: 10%;
+	height: 60%;
+	margin-right: 65px;
+	margin-top: -58px;
+	
+	
+}
+
+.ltext h1 {
+	float: left;
+	margin-top: 40px;
+	margin-left: -40%;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: none;
+}
+
+
+
+
+
+/* this is for the 4 pictures*/
+
+.pictures {
+	margin-top: 0%;
+	margin-left: 6.5%;
+	display: block;
+	float: left;
+	
+}
+
+.pictures li {
+	display: inline;
+	margin-right: -20%;
+	
+}
+
+
+.pictures h4{
+	float: left;
+	font-size: 11px;
+
+	
+}
+
+
+.pictures p {
+	color: #171717;
+	margin-top: 67px;
+	float: left;
+	margin-left: 0%;
+	font-size: 10px;
+	font-weight: lighter;
+}
+
+
+.pictures img {
+	float: left;
+	width: 5.5%;
+	height: 105%;
+	margin-top: 2%;
+	
+}
+
+
+.footer {
+	width: 100%;
+	margin-top: 20%;
+	background: #323232;
+	display: block;
+	height: 180px;
+
+}
+
+
+.footer p {
+	float: center;
+	color: #AAAAAA;
+	font-weight: lighter;
+	font-size: 10.5px;
+	padding-top: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
